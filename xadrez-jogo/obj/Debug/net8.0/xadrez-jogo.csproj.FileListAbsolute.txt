@@ -1,0 +1,14 @@
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.AssemblyInfoInputs.cache
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.AssemblyInfo.cs
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.csproj.CoreCompileInputs.cache
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\bin\Debug\net8.0\xadrez-jogo.exe
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\bin\Debug\net8.0\xadrez-jogo.deps.json
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\bin\Debug\net8.0\xadrez-jogo.runtimeconfig.json
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\bin\Debug\net8.0\xadrez-jogo.dll
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\bin\Debug\net8.0\xadrez-jogo.pdb
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.dll
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\refint\xadrez-jogo.dll
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.pdb
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\xadrez-jogo.genruntimeconfig.cache
+C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\obj\Debug\net8.0\ref\xadrez-jogo.dll
