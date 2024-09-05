@@ -8,9 +8,11 @@ namespace xadrez_jogo.tabuleiroJogo
 {
     public abstract class Peca
     {
+         public int Id { get; set; } 
         public Posicao Posicao { get; set; }
-        private Tabuleiro Tabuleiro { get; }
+        public Tabuleiro Tabuleiro;
 
+        public Peca(){ }
         protected Peca(Tabuleiro tabuleiro)
         {
             Tabuleiro = tabuleiro;

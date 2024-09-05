@@ -71,7 +71,7 @@ namespace xadrez_jogo.aplicacao
             Console.WriteLine();
             ImprimirPecasCapturadas(capturadas);
             Console.WriteLine();
-            Console.WriteLine("Turno: " + partida.Turno);
+            Console.WriteLine("Turno: " + partida.turno);
             if (!partida.XequeMate)
             {
                 Console.WriteLine("Aguardando jogador: " + partida.JogadorAtual);
@@ -126,7 +126,36 @@ namespace xadrez_jogo.aplicacao
             }
             Console.Write(" ");
         }
+        public static void BancoDeDados()
+        {
+            using var context = new ChessDbContext();
+            try
+            {
+                Console.WriteLine("Verificando se o banco de dados está criado...");
+                context.Database.EnsureCreated(); // Cria o banco de dados se não existir
 
+                Console.WriteLine("Banco de dados verificado/ criado com sucesso.");
+
+                // Adicionar uma nova partida como exemplo
+                var novaPartida = new PartidaXadrez
+                {
+                    // Inicializar propriedades da partida, se necessário
+                };
+                context.PartidasXadrez.Add(novaPartida);
+                context.SaveChanges();
+                Console.WriteLine("Partida criada com sucesso no banco de dados.");
+
+                // Ler partidas existentes
+                var partidas = context.PartidasXadrez.ToList();
+                Console.WriteLine($"Total de partidas no banco de dados: {partidas.Count}");
+            
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao conectar ou manipular o banco de dados: {ex.Message}");
+
+            }
+        }   
         private static void ImprimirPecasCapturadas(List<PecaXadrez> capturadas)
         {
             List<PecaXadrez> brancas = capturadas.Where(x => x.Cor == Cor.Branco).ToList();
@@ -154,6 +183,4 @@ namespace xadrez_jogo.aplicacao
             Console.WriteLine("============================        " + ANSI_RESET);
         }
     }
-
 }
-

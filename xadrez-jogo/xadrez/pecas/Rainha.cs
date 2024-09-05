@@ -9,6 +9,9 @@ namespace xadrez_jogo.xadrez.pecas
 {
     public class Rainha : PecaXadrez
     {
+        public int Id { get; set; }
+        
+        public Rainha(){}
         public Rainha(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
         {
         }

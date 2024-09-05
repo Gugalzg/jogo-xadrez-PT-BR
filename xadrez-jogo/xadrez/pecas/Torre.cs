@@ -9,6 +9,9 @@ namespace xadrez_jogo.xadrez.pecas
 {
     public class Torre : PecaXadrez
     {
+        public int Id { get; set; }
+        
+        public Torre(){}
         public Torre(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
         {
         }

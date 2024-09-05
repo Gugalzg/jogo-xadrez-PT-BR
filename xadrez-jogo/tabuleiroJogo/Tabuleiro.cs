@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using xadrez_jogo.xadrez;
 
 namespace xadrez_jogo.tabuleiroJogo
 {
     public class Tabuleiro
     {
+        public int Id { get; set; }
         private int linhas;
         private int colunas;
+        
+        public ICollection<PecaXadrez> PecasXadrez { get; set; } = new List<PecaXadrez>();
         private Peca[,] pecas;
 
+        public Tabuleiro() {
+       
+        }
         public Tabuleiro(int linhas, int colunas)
         {
             if (linhas < 1 || colunas < 1)

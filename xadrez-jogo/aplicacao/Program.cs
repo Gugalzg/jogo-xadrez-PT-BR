@@ -1,4 +1,11 @@
-﻿using xadrez_jogo.xadrez;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using xadrez_jogo.tabuleiroJogo;
+using xadrez_jogo.xadrez;
+using xadrez_jogo.xadrez.pecas; // Importar as classes concretas das peças
+using xadrez_jogo.aplicacao;
+using Microsoft.EntityFrameworkCore;
 
 namespace xadrez_jogo.aplicacao
 {
@@ -6,6 +13,11 @@ namespace xadrez_jogo.aplicacao
     {
         static void Main(string[] args)
         {
+           
+            UI.BancoDeDados();
+            Console.WriteLine("Pressione Enter para continuar...");
+            Console.ReadLine();
+
             var partidaXadrez = new PartidaXadrez();
             var capturadas = new List<PecaXadrez>();
 
@@ -15,6 +27,7 @@ namespace xadrez_jogo.aplicacao
                 {
                     UI.LimparTela();
                     UI.ImprimirPartida(partidaXadrez, capturadas);
+
                     Console.WriteLine();
                     Console.Write("Origem: ");
                     PosicaoXadrez origem = UI.LerPosicaoXadrez();
@@ -56,14 +69,13 @@ namespace xadrez_jogo.aplicacao
                 {
                     Console.WriteLine(e.Message);
                     Console.ReadLine();
-                }
-                
+                }   
             }
-
             UI.LimparTela();
             UI.ImprimirCabecalho();
             UI.ImprimirPartida(partidaXadrez, capturadas);
         }
+
+        
     }
 }
-

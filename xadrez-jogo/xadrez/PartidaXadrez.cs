@@ -10,8 +10,10 @@ namespace xadrez_jogo.xadrez
 {
     public class PartidaXadrez
     {
-
-        private int turno;
+        public int Id { get; set; }
+        public int PartidaXadrezId { get; set; }  // Chave estrangeira
+        public ICollection<PecaXadrez> PecasXadrez { get; set; } = new List<PecaXadrez>();
+        public int turno;
         private Cor jogadorAtual;
         private Tabuleiro tabuleiro;
         private bool xeque;

@@ -8,7 +8,11 @@ using xadrez_jogo.tabuleiroJogo;
 namespace xadrez_jogo.xadrez.pecas
 {  
         public class Bispo : PecaXadrez
-        {
+        { 
+            public int Id { get; set; }
+            
+            public Bispo(){   
+            }
             public Bispo(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
             {
             }

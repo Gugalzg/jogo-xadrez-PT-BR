@@ -9,8 +9,10 @@ namespace xadrez_jogo.xadrez.pecas
 {
     public class Peao : PecaXadrez
     {
+        public int Id { get; set; }
         private PartidaXadrez partidaXadrez;
-
+        
+        public Peao(){}
         public Peao(Tabuleiro tabuleiro, Cor cor, PartidaXadrez partidaXadrez) : base(tabuleiro, cor)
         {
             this.partidaXadrez = partidaXadrez;

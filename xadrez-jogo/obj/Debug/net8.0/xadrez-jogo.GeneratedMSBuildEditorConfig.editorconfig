@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = xadrez_jogo
-build_property.ProjectDir = C:\Users\Guga\Downloads\Programação\ProjetoFinalCSharp-main\xadrez-jogo\
+build_property.ProjectDir = C:\Users\Guga\Downloads\Programação\jogo-xadrez-br\xadrez-jogo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

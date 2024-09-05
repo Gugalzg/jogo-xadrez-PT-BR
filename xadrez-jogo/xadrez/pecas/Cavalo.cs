@@ -10,6 +10,9 @@ namespace xadrez_jogo.xadrez.pecas
 {
     public class Cavalo : PecaXadrez
     {
+        public int Id { get; set; }
+        
+        public Cavalo(){}
         public Cavalo(Tabuleiro tabuleiro, Cor cor) : base(tabuleiro, cor)
         {
         }

@@ -9,8 +9,9 @@ namespace xadrez_jogo.xadrez.pecas
 {
     public class Rei : PecaXadrez
     {
-        private PartidaXadrez partidaXadrez;
-
+        public int Id { get; set; }
+        private PartidaXadrez partidaXadrez;  
+        public Rei(){}
         public Rei(Tabuleiro tabuleiro, Cor cor, PartidaXadrez partidaXadrez) : base(tabuleiro, cor)
         {
             this.partidaXadrez = partidaXadrez;

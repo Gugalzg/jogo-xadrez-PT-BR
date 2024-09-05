@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guga\\Downloads\\Programação\\ProjetoFinalCSharp-main\\xadrez-jogo\\xadrez-jogo.csproj": {}
+    "C:\\Users\\Guga\\Downloads\\Programação\\jogo-xadrez-br\\xadrez-jogo\\xadrez-jogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guga\\Downloads\\Programação\\ProjetoFinalCSharp-main\\xadrez-jogo\\xadrez-jogo.csproj": {
+    "C:\\Users\\Guga\\Downloads\\Programação\\jogo-xadrez-br\\xadrez-jogo\\xadrez-jogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guga\\Downloads\\Programação\\ProjetoFinalCSharp-main\\xadrez-jogo\\xadrez-jogo.csproj",
+        "projectUniqueName": "C:\\Users\\Guga\\Downloads\\Programação\\jogo-xadrez-br\\xadrez-jogo\\xadrez-jogo.csproj",
         "projectName": "xadrez-jogo",
-        "projectPath": "C:\\Users\\Guga\\Downloads\\Programação\\ProjetoFinalCSharp-main\\xadrez-jogo\\xadrez-jogo.csproj",
+        "projectPath": "C:\\Users\\Guga\\Downloads\\Programação\\jogo-xadrez-br\\xadrez-jogo\\xadrez-jogo.csproj",
         "packagesPath": "C:\\Users\\Guga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guga\\Downloads\\Programação\\ProjetoFinalCSharp-main\\xadrez-jogo\\obj\\",
+        "outputPath": "C:\\Users\\Guga\\Downloads\\Programação\\jogo-xadrez-br\\xadrez-jogo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guga\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
