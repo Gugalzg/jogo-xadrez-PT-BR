@@ -15,8 +15,7 @@ namespace xadrez_jogo.aplicacao
         // Configuração do banco de dados
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Configurar a string de conexão com o banco de dados
-            // Ajuste conforme seu banco de dados (SQLite, SQL Server, etc.)
+
             optionsBuilder.UseSqlite("Data Source=ChessGameDb.db");
         }
 
@@ -48,11 +47,9 @@ namespace xadrez_jogo.aplicacao
             // Configuração de relacionamentos
             modelBuilder.Entity<PartidaXadrez>()
                 .HasMany(p => p.PecasXadrez)
-                .WithOne() // Assumindo que não há uma propriedade de navegação inversa
-                .HasForeignKey("PartidaXadrezId"); // Ajuste a chave estrangeira conforme necessário
+                .WithOne() 
+                .HasForeignKey("PartidaXadrezId"); 
 
-            // Outras configurações necessárias
-            // Exemplo: Configuração de conversão de tipo
             modelBuilder.Entity<PecaXadrez>()
                 .Property(p => p.Cor)
                 .HasConversion<string>();
